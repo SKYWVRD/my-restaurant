@@ -1,0 +1,23 @@
+{
+  "name": "my-restaurant",
+  "version": "1.0.0",
+  "description": "simple restaurant page for menus and marketing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKYWVRD/my-restaurant.git"
+  },
+  "author": "Sean Boonzaier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SKYWVRD/my-restaurant/issues"
+  },
+  "homepage": "https://github.com/SKYWVRD/my-restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
