@@ -1,1 +1,1 @@
-(()=>{"use strict";document.getElementById("content").innerHTML="Hello Sean"})();
+(()=>{"use strict";document.getElementById("content").innerHTML="Hello Jack"})();

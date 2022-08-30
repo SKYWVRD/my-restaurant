@@ -1,7 +1,6 @@
-function buildPage(){
+export const buildPage = (name) => {
     const mainContent = document.getElementById('content');
     
-    mainContent.innerHTML = "Hello Sean";
+    mainContent.innerHTML = `Hello ${name}`;
 }
 
-export {buildPage}

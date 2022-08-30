@@ -3,4 +3,4 @@ import {
 } from "./main-page.js"
 
 
-buildPage();
+buildPage('Jack');
