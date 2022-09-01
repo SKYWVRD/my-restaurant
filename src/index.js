@@ -1,11 +1,14 @@
 import {
-    buildPage
+    buildHome
 } from "./home-page.js";
+import{
+    buildMenu
+} from "./menu-page.js";
 import './styles.css';
 
 
 buildNav();
-buildPage();
+buildHome();
 
 
 
@@ -27,6 +30,9 @@ function buildNav(){
     menuTab.classList.add('tab');
     contactTab.classList.add('tab');
 
+    homeTab.addEventListener('click', buildHome)
+    menuTab.addEventListener('click', buildMenu);
+
     homeTab.innerHTML = 'HOME';
     menuTab.innerHTML = 'MENU';
     contactTab.innerHTML = 'CONTACT';
@@ -37,4 +43,4 @@ function buildNav(){
     
 
     contentContainer.appendChild(navContainer);
-}
+};
