@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.tab {
+    margin: 40px;
+    height: 20px;
+    width: 50px;
+}
