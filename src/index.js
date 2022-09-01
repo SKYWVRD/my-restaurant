@@ -4,6 +4,9 @@ import {
 import{
     buildMenu
 } from "./menu-page.js";
+import{
+    buildContacts
+} from "./contact-page.js"
 import './styles.css';
 
 
@@ -30,8 +33,9 @@ function buildNav(){
     menuTab.classList.add('tab');
     contactTab.classList.add('tab');
 
-    homeTab.addEventListener('click', buildHome)
+    homeTab.addEventListener('click', buildHome);
     menuTab.addEventListener('click', buildMenu);
+    contactTab.addEventListener('click', buildContacts);
 
     homeTab.innerHTML = 'HOME';
     menuTab.innerHTML = 'MENU';
