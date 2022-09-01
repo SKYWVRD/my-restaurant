@@ -1,11 +1,11 @@
 import {
     buildPage
 } from "./home-page.js";
-
 import './styles.css';
 
 
 buildNav();
+buildPage();
 
 
 

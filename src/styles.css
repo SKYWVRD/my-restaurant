@@ -1,15 +1,33 @@
-.content {
+
+
+#content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .nav-container{
     display: flex;
     justify-content: center;
-    color: red;
+    color: black;
 }
 
 .tab {
+    display: flex;
     margin: 40px;
-    height: 20px;
-    width: 50px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.tab:hover{
+    background-color: grey;
+}
+
+.blurb{
+
 }
