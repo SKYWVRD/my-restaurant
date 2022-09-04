@@ -1,14 +1,34 @@
+body {
+    background-color: black;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
 #content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px white;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 80vh;
+    border-radius: 10px;
 }
 
 .nav-container{
     display: flex;
     justify-content: center;
-    color: black;
+    color: white;
 }
 
 .tab {
@@ -16,7 +36,7 @@
     margin: 40px;
     height: 30px;
     width: 100px;
-    border: 1px solid black;
+    border: 1px solid white;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
@@ -27,9 +47,37 @@
     background-color: grey;
 }
 
+.title, .writeup {
+    margin: 10px;
+    font-size: 40px;
+    border: dashed;
+    max-width: max-content;
+    align-self: center;
+    border-radius: 10px;
+}
+
 .blurb{
+    color: white;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
+    text-align: center;
 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.writeUp {
+    max-width: 40vw;
+    align-self: center;
+    line-height: 2;
+    
+}
+
+.home-image {
+    width: 200px;
+    border-radius: 50px;
 }

@@ -7,7 +7,10 @@ export const buildMenu = () => {
     clearContent();
     const menuList = document.createElement('div')
     menuList.classList.add('blurb');
-    menuList.innerHTML = 'This is a menu';
+    const menuTitle = document.createElement('div');
+    menuTitle.classList.add('title');
+    menuTitle.innerHTML= 'Menu'
+    menuList.append(menuTitle);
 
     mainContainer.appendChild(menuList);
 }

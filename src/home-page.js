@@ -1,24 +1,40 @@
-import background from '../images/neonrest.jpg';
+import Burger from '../images/burger.jpg'
 import{
     clearContent
 } from "./util.js"
+
+
 
 export const buildHome = (name) => {
     const mainContainer = document.getElementById('content');
     clearContent();
     const blurbContainer = document.createElement('div');
     blurbContainer.classList.add('blurb');
+    const restuarantTitle = document.createElement('div');
+    restuarantTitle.classList.add('title');
+    restuarantTitle.innerHTML = 'Eat Some More'
     const writeUpContainer = document.createElement('div');
     writeUpContainer.classList.add('writeUp');
-    writeUpContainer.innerHTML = 'This is a write up';
-    const imageContainer1 = document.createElement('div');
-    const imageContainer2 = document.createElement('div');
-    const imageContainer3 = document.createElement('div');
-    imageContainer1.classList.add('small-image');
+    writeUpContainer.innerHTML = `
+    Welcome to Eat Some More <br />
+    Our food has been carefully selected to ensure the finest dining experience and memories <br />
+    So how about it, would you like to Eat Some More?
+    `;
+    const imageContainer = document.createElement('div');
+    const image1 = new Image();
+    const image2 = new Image();
+    const image3 = new Image();
+    image1.src = Burger;
+    image1.classList.add('home-image')
+    imageContainer.classList.add('image-container');
+    imageContainer.appendChild(image1);
+    imageContainer.appendChild(image2);
+    imageContainer.appendChild(image3);
 
 
-    
+    blurbContainer.appendChild(restuarantTitle);
     blurbContainer.appendChild(writeUpContainer);
+    blurbContainer.appendChild(imageContainer);
 
     mainContainer.appendChild(blurbContainer);
 
