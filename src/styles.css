@@ -1,5 +1,4 @@
 
-
 #content {
     display: flex;
     flex-direction: column;
@@ -29,5 +28,8 @@
 }
 
 .blurb{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
 }

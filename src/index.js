@@ -9,17 +9,8 @@ import{
 } from "./contact-page.js"
 import './styles.css';
 
-
 buildNav();
 buildHome();
-
-
-
-
-
-
-
-
 
 function buildNav(){
     const contentContainer = document.getElementById('content');
@@ -45,6 +36,5 @@ function buildNav(){
     navContainer.appendChild(menuTab);
     navContainer.appendChild(contactTab);
     
-
-    contentContainer.appendChild(navContainer);
+    document.body.prepend(navContainer);
 };

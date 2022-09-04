@@ -5,8 +5,9 @@ import {
 export const buildContacts = () => {
     const mainContainer = document.getElementById('content');
     clearContent();
-    const menuList = document.createElement('div')
-    menuList.innerHTML = 'This is a contact page';
+    const contactList = document.createElement('div')
+    contactList.classList.add('blurb')
+    contactList.innerHTML = 'This is a contact page';
 
-    mainContainer.appendChild(menuList);
+    mainContainer.appendChild(contactList);
 }
