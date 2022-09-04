@@ -59,6 +59,7 @@ body {
     max-width: max-content;
     align-self: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .blurb{
