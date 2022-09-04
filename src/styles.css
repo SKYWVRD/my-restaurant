@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -17,11 +20,11 @@ body {
 #content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: solid 2px white;
-    margin-left: 50px;
-    margin-right: 50px;
     min-height: 80vh;
+    margin-bottom: 10px;
+    width: 80vw;
+    max-width: 780px;
     border-radius: 10px;
 }
 
@@ -29,10 +32,12 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    width: 80vw;
 }
 
 .tab {
     display: flex;
+    flex-wrap: wrap;
     margin: 40px;
     height: 30px;
     width: 100px;
@@ -63,7 +68,7 @@ body {
     align-content: center;
     justify-content: center;
     text-align: center;
-
+    margin: 50px;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -77,7 +82,16 @@ body {
     
 }
 
+.image-container {
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 80vw;
+}
+
 .home-image {
+    margin: 10px;
     width: 200px;
+    height: 200px;
     border-radius: 50px;
 }

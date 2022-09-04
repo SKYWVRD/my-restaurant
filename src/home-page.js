@@ -1,4 +1,6 @@
-import Burger from '../images/burger.jpg'
+import burger from '../images/burger.jpg'
+import pizza from '../images/pizza.jpg'
+import dessert from '../images/dessert.jpeg'
 import{
     clearContent
 } from "./util.js"
@@ -24,13 +26,16 @@ export const buildHome = (name) => {
     const image1 = new Image();
     const image2 = new Image();
     const image3 = new Image();
-    image1.src = Burger;
+    image1.src = burger;
+    image2.src = pizza;
+    image3.src = dessert;
     image1.classList.add('home-image')
+    image2.classList.add('home-image')
+    image3.classList.add('home-image')
     imageContainer.classList.add('image-container');
     imageContainer.appendChild(image1);
     imageContainer.appendChild(image2);
     imageContainer.appendChild(image3);
-
 
     blurbContainer.appendChild(restuarantTitle);
     blurbContainer.appendChild(writeUpContainer);
